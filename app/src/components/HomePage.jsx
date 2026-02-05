@@ -33,8 +33,6 @@ function HomePage({ onPlayClick }) {
     };
 
     checkLiveStatus();
-    
-    // Check every 30 seconds for updates
     const interval = setInterval(checkLiveStatus, 30000);
     
     return () => clearInterval(interval);
@@ -83,7 +81,6 @@ function HomePage({ onPlayClick }) {
         zIndex: 0
       }} />
       
-      {/* CUADRO CONTENEDOR EXTERIOR */}
       <div style={{
         border: "1px solid #00c3ff",
         borderRadius: "28px",
@@ -99,7 +96,6 @@ function HomePage({ onPlayClick }) {
           gridTemplateColumns: "0.8fr 1.2fr",
           gap: "0"
         }}>
-          {/* SECCIÓN IZQUIERDA */}
           <div style={{
             textAlign: "center",
             display: "flex",
@@ -110,7 +106,6 @@ function HomePage({ onPlayClick }) {
             borderRight: "1px solid rgba(0, 195, 255, 0.3)",
             paddingRight: "3rem"
           }}>
-            {/* Header con logo y Rainbet */}
             <div style={{
               display: "flex",
               alignItems: "center",
@@ -147,7 +142,7 @@ function HomePage({ onPlayClick }) {
             }}>
               • {loading ? "CARGANDO..." : isLive ? "ONLINE" : "OFFLINE"}
             </div>
-          {/* Mensaje principal */}
+          
           <h2 style={{
             fontSize: "1.8rem",
             fontWeight: "bold",
@@ -161,7 +156,6 @@ function HomePage({ onPlayClick }) {
           </h2>
         </div>
 
-        {/* SECCIÓN DERECHA */}
         <div style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
@@ -169,7 +163,6 @@ function HomePage({ onPlayClick }) {
           maxWidth: "480px",
           paddingLeft: "3rem"
         }}>
-          {/* Rainbet - Ocupa 2 columnas */}
           <a href="https://rainbet.com/?r=luiseramos" target="_blank" rel="noopener noreferrer" style={{
             gridColumn: "1 / -1",
             background: "transparent",
@@ -202,7 +195,6 @@ function HomePage({ onPlayClick }) {
             <div style={{ color: "#999", fontSize: "0.75rem", margin: "0" }}>CÓDIGO: luiseramos</div>
           </a>
 
-          {/* Canal Kick */}
           <a href="https://kick.com/el_lobito_del_pueblo" target="_blank" rel="noopener noreferrer" style={{
             background: "transparent",
             border: "2px solid #00FF00",
@@ -231,7 +223,6 @@ function HomePage({ onPlayClick }) {
             <div style={{ fontSize: "0.7rem", color: "#999", margin: "0" }}>SORTEOS EN VIVO</div>
           </a>
 
-          {/* Comunidad VIP */}
           <a href="https://chat.whatsapp.com/LHQye4otyO27Urmq07gkOR" target="_blank" rel="noopener noreferrer" style={{
             background: "transparent",
             border: "2px solid #00FF00",
@@ -260,7 +251,6 @@ function HomePage({ onPlayClick }) {
             <div style={{ fontSize: "0.7rem", color: "#999", margin: "0" }}>ÚNETE A LA MANADA</div>
           </a>
 
-          {/* Leaderboard */}
           <a href="#" style={{
             background: "transparent",
             border: "2px solid #00c3ff",

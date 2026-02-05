@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
-// Deshabilitar scroll global
 const style = document.createElement("style");
 style.textContent = `
   body, html, #root {

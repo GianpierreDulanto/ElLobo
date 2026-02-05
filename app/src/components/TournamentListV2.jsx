@@ -52,8 +52,6 @@ function TournamentListV2() {
     <>
       <style>{`@keyframes fadeInDown {from {opacity: 0; transform: translateY(-15px);} to {opacity: 1; transform: translateY(0);}} @keyframes slideIn {from {opacity: 0; transform: translateX(-8px);} to {opacity: 1; transform: translateX(0);}} @keyframes glow {0%, 100% {box-shadow: 0 0 15px rgba(74,158,255,0.4), inset 0 0 15px rgba(74,158,255,0.08);} 50% {box-shadow: 0 0 30px rgba(74,158,255,0.6), inset 0 0 20px rgba(74,158,255,0.15);}} @keyframes glowWhite {0%, 100% {box-shadow: 0 0 15px rgba(232,232,232,0.4), inset 0 0 15px rgba(232,232,232,0.08);} 50% {box-shadow: 0 0 30px rgba(232,232,232,0.6), inset 0 0 20px rgba(232,232,232,0.15);}}`}</style>
       <div style={{ background: "linear-gradient(135deg, rgba(10,15,40,0.95) 0%, rgba(20,25,50,0.95) 50%, rgba(10,15,40,0.95) 100%), url('/assets/wolf-romance-desktop-z6izk3kyhlw6blcc.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "fixed", minHeight: "100vh", padding: "1.2rem 0.9rem", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily: "'Montserrat', sans-serif", position: "relative", overflow: "hidden" }}>
-        
-        {/* Header */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", maxWidth: "1400px", marginBottom: "1.2rem", position: "relative", zIndex: 10 }}>
           <div style={{ flex: 1 }} />
           <h1 style={{ fontSize: "2.5rem", background: "linear-gradient(135deg, #4A9EFF 0%, #00E5FF 50%, #00c3ff 100%)", backgroundClip: "text", WebkitBackgroundClip: "text", color: "transparent", letterSpacing: "1px", margin: 0, animation: "fadeInDown 0.8s ease-out", textAlign: "center", flex: 1, fontWeight: 900 }}>🏆 EL PORNEO DEL LOBO</h1>
@@ -62,20 +60,16 @@ function TournamentListV2() {
           </div>
         </div>
 
-        {/* Team Count */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem", width: "100%", maxWidth: "1400px", marginBottom: "1rem", paddingBottom: "1rem", borderBottom: "1px solid rgba(74,158,255,0.2)", zIndex: 10 }}>
           <div style={{ fontSize: "1rem", fontWeight: 900, letterSpacing: "0.4px", background: "rgba(74,158,255,0.05)", padding: "0.85rem 1.2rem", borderRadius: "6px", border: "0.8px solid rgba(74,158,255,0.2)", textAlign: "left", color: "#4A9EFF" }}>🐺 LOBO NOCTURNO: {teamA.length} 🐺</div>
           <div style={{ fontSize: "1rem", fontWeight: 900, letterSpacing: "0.4px", background: "rgba(232,232,232,0.05)", padding: "0.85rem 1.2rem", borderRadius: "6px", border: "0.8px solid rgba(232,232,232,0.2)", textAlign: "right", color: "#E8E8E8" }}>🐺 LOBO PLATA: {teamB.length} 🐺</div>
         </div>
 
-        {/* Advantage */}
         <div style={{ background: "linear-gradient(135deg, rgba(74,158,255,0.25) 0%, rgba(0,229,255,0.15) 100%)", border: "2px solid rgba(74,158,255,0.6)", borderRadius: "22px", padding: "1rem 1.8rem", fontWeight: 900, fontSize: "1.05rem", boxShadow: "0 0 35px rgba(74,158,255,0.3), inset 0 0 20px rgba(74,158,255,0.1)", letterSpacing: "0.5px", textAlign: "center", marginBottom: "1.5rem", color: "#FFFFFF", zIndex: 10, animation: "slideIn 0.6s ease-out", display: "flex", alignItems: "center", justifyContent: "center", gap: "0.9rem" }}>
           <span>VENTAJA:</span> <span style={{ color: ventajaColor, fontWeight: 900, fontSize: "1.4rem", textShadow: "0 0 10px rgba(0,0,0,0.5)" }}>{ventaja}</span> <span style={{ fontSize: "1.15rem", color: "#00c3ff", fontWeight: 900, textShadow: "0 0 8px rgba(255,214,0,0.5)" }}>${diff.toLocaleString('es-AR')}</span>
         </div>
 
-        {/* Arena */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.2rem", maxWidth: "1400px", width: "100%", alignItems: "stretch", margin: "0 auto 0.9rem", zIndex: 10 }}>
-          {/* Team A */}
           <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem", animation: "fadeInDown 0.8s ease-out" }}>
             <div style={{ textAlign: "center", fontWeight: 900, fontSize: "2.4rem", padding: "1.2rem 1.3rem", borderRadius: "9px", letterSpacing: "0.4px", wordBreak: "break-word", background: "linear-gradient(135deg, #1a2a4a 0%, #2a4a6a 100%)", color: "#fff", boxShadow: "0 4px 12px rgba(74,158,255,0.15)", border: "1px solid rgba(74,158,255,0.3)", animation: "glow 3s ease-in-out infinite" }}>${totalA.toLocaleString('es-AR')}</div>
             <div style={{ display: "grid", gridTemplateColumns: "75px 1fr", gap: "0.85rem", alignItems: "stretch" }}>
@@ -100,7 +94,6 @@ function TournamentListV2() {
             </div>
           </div>
 
-          {/* Team B */}
           <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem", animation: "fadeInDown 0.8s ease-out" }}>
             <div style={{ textAlign: "center", fontWeight: 900, fontSize: "2.4rem", padding: "1.2rem 1.3rem", borderRadius: "9px", letterSpacing: "0.4px", wordBreak: "break-word", background: "linear-gradient(135deg, #E8E8E8 0%, #FFFFFF 100%)", color: "#000", boxShadow: "0 4px 12px rgba(232,232,232,0.15)", border: "1px solid rgba(232,232,232,0.3)", animation: "glowWhite 3s ease-in-out infinite" }}>${totalB.toLocaleString('es-AR')}</div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 75px", gap: "0.85rem", alignItems: "stretch" }}>
@@ -126,7 +119,6 @@ function TournamentListV2() {
           </div>
         </div>
 
-        {/* Back Button */}
         <button onClick={() => window.location.href = "/"} style={{ background: "transparent", color: "#666", border: "0.8px solid rgba(100,100,100,0.3)", borderRadius: "6px", padding: "0.65rem 1.3rem", fontWeight: 900, fontSize: "0.9rem", cursor: "pointer", transition: "all 0.3s", letterSpacing: "0.4px", boxShadow: "0 0 6px rgba(100,100,100,0.08)", marginTop: "1.1rem" }} onMouseEnter={(e) => { e.target.style.background = "#666"; e.target.style.color = "#fff"; e.target.style.boxShadow = "0 0 16px rgba(150,150,150,0.25)"; }} onMouseLeave={(e) => { e.target.style.background = "transparent"; e.target.style.color = "#666"; e.target.style.boxShadow = "0 0 6px rgba(100,100,100,0.08)"; }}>← VOLVER</button>
       </div>
     </>
