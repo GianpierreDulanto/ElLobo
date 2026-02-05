@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(135deg, #181818 0%, #222 100%);
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  color: #00c3ff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  padding: 1.5rem 2rem;
+  border-bottom: 3px solid #00c3ff;
+  box-shadow: 0 4px 12px rgba(255, 214, 0, 0.2);
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #00c3ff;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #00E5FF;
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+.main {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #1a1a1a;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #00c3ff22;
+  padding: 2rem;
+  border: 2px solid #00c3ff55;
+}
+
+button, input {
+  border-radius: 8px;
+  border: none;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+button {
+  background: #00c3ff;
+  color: #222;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 8px #00c3ff55;
+}
+
+button:hover {
+  background: #222;
+  color: #00c3ff;
+  border: 2px solid #00c3ff;
+}
+
+input {
+  background: #333;
+  color: #00c3ff;
+  border: 1px solid #00c3ff;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+h2 {
+  color: #00c3ff;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: #00E5FF;
+}
+
+ul {
+  padding-left: 1.2rem;
+  color: #00c3ff;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: #00c3ff;
+}
+
+a {
+  color: #00E5FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00c3ff;
+}
